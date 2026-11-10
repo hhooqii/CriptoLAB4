@@ -30,15 +30,15 @@ pin = priv.decrypt(
     pin_cifrado,
     padding.OAEP(mgf=padding.MGF1(hashes.SHA256()), algorithm=hashes.SHA256(), label=None),
 ).decode()
-print("PIN recuperado mediante RSA")
+print("PIN recuperado con RSA")
 print(f"PIN: {pin}")
 
 key = Scrypt(salt=salt, length=32, n=2**14, r=8, p=1).derive(pin.encode())
-print(f"[+] Clave AES-256 derivada: {key.hex()}")
+print(f"Clave AES-256 derivada: {key.hex()}")
 
 tx = [(n, d) for n, d in paquetes if d.startswith(AES_TAG)]
-print(f"[+] Transacciones cifradas encontradas: {len(tx)}\n")
-print("Transcacciones cifradas\n")
+print(f"Mensajes cifrados encontrados: {len(tx)}\n")
+print("Mensajes cifrados\n")
 
 aes, ok = AESGCM(key), 0
 for i, (n, d) in enumerate(tx, 1):
@@ -47,8 +47,8 @@ for i, (n, d) in enumerate(tx, 1):
     try:
         texto = aes.decrypt(nonce, ct, None).decode()
         ok += 1
-        print(f"[Transacción {i}] (paquete #{n}, nonce={nonce.hex()})\n{texto}\n")
+        print(f"Mensaje {i} (paquete #{n}, nonce={nonce.hex()})\n{texto}\n")
     except InvalidTag:
-        print(f"[Transacción {i}] (paquete #{n}) AUTENTICACIÓN FALLIDA\n")
+        print(f"Mensaje {i} (paquete #{n}) falla en la autenticación\n")
 
-print(f"[+] {ok}/{len(tx)} transacciones autenticadas correctamente (tag GCM válido)")
+print(f"[+] {ok}/{len(tx)} mensajes autenticados correctamente (tag GCM válido)")
