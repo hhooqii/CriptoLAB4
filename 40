@@ -1,0 +1,134 @@
+(venv) hoqi@hoqi-ideapad:~/lab4-ssh/lab4-act2$ ls
+clave_privada.pem  descifrar.py                 venv
+clave_publica.pem  transacciones_cifradas.pcap
+(venv) hoqi@hoqi-ideapad:~/lab4-ssh/lab4-act2$ python3 descifrar.py transacciones_cifradas.pcap clave_privada.pem
+Paquete RSA_PIN: #1 | salt=1a065da01a70284041b93dd58e988907 | PIN cifrado=256 bytes
+PIN recuperado mediante RSA
+PIN: 4827
+[+] Clave AES-256 derivada: f64d739ad8bd559fcd4bde7b9aecb83ff28d200331da635d7409b7133b16eab7
+[+] Transacciones cifradas encontradas: 40
+
+Transcacciones cifradas
+
+[Transacción 1] (paquete #2, nonce=2f0f7c0cec6fc6216066c11e)
+TRANSACCION COMPLETADA|ID=TRX-426477|DE=Diego Ramirez|A=Constanza Vidal|MONTO=763923
+
+[Transacción 2] (paquete #3, nonce=f5c032c5c3baf74914c18aa1)
+TRANSACCION COMPLETADA|ID=TRX-346837|DE=Catalina Vargas|A=Valentina Rojas|MONTO=58911
+
+[Transacción 3] (paquete #4, nonce=f1826a6757626bcfabfe448f)
+TRANSACCION COMPLETADA|ID=TRX-412154|DE=Sebastian Munoz|A=Constanza Vidal|MONTO=485213
+
+[Transacción 4] (paquete #5, nonce=0b962c7d9fe06f7ae2c9a283)
+TRANSACCION COMPLETADA|ID=TRX-071484|DE=Felipe Morales|A=Tomas Sepulveda|MONTO=314718
+
+[Transacción 5] (paquete #6, nonce=458423deb5c4dd3ee962243d)
+TRANSACCION COMPLETADA|ID=TRX-805221|DE=Isidora Silva|A=Javiera Fuentes|MONTO=104470
+
+[Transacción 6] (paquete #7, nonce=17ce6a392177c70d9b2037ee)
+TRANSACCION COMPLETADA|ID=TRX-971697|DE=Valentina Rojas|A=Camila Torres|MONTO=785714
+
+[Transacción 7] (paquete #8, nonce=d5a2726555cd5ec4b361c263)
+TRANSACCION COMPLETADA|ID=TRX-139273|DE=Catalina Vargas|A=Nicolas Herrera|MONTO=913757
+
+[Transacción 8] (paquete #9, nonce=7d24d0fb28904d84cc8a0f40)
+TRANSACCION COMPLETADA|ID=TRX-652114|DE=Camila Torres|A=Fernanda Araya|MONTO=855548
+
+[Transacción 9] (paquete #10, nonce=55b1db0ffb5babd675688b1d)
+TRANSACCION COMPLETADA|ID=TRX-432361|DE=Vicente Soto|A=Matias Gonzalez|MONTO=818686
+
+[Transacción 10] (paquete #11, nonce=7c94d0f6caa9e30b96c4e420)
+TRANSACCION COMPLETADA|ID=TRX-818929|DE=Antonia Castro|A=Tomas Sepulveda|MONTO=885868
+
+[Transacción 11] (paquete #12, nonce=c615a68c01423c38316bf2ba)
+TRANSACCION COMPLETADA|ID=TRX-871181|DE=Catalina Vargas|A=Camila Torres|MONTO=514444
+
+[Transacción 12] (paquete #13, nonce=a5e11a5f032d4bfea65eadc9)
+TRANSACCION COMPLETADA|ID=TRX-157566|DE=Tomas Sepulveda|A=Javiera Fuentes|MONTO=436301
+
+[Transacción 13] (paquete #14, nonce=6a8e9fc89912e5ad14c3a5f2)
+TRANSACCION COMPLETADA|ID=TRX-186243|DE=Vicente Soto|A=Daniela Reyes|MONTO=698110
+
+[Transacción 14] (paquete #15, nonce=2981371633a1942d8e142fbd)
+TRANSACCION COMPLETADA|ID=TRX-121024|DE=Isidora Silva|A=Sebastian Munoz|MONTO=623481
+
+[Transacción 15] (paquete #16, nonce=559a043f24dc6df589941434)
+TRANSACCION COMPLETADA|ID=TRX-339097|DE=Matias Gonzalez|A=Constanza Vidal|MONTO=77226
+
+[Transacción 16] (paquete #17, nonce=b042fd8ac3f578627f2ac139)
+TRANSACCION COMPLETADA|ID=TRX-663549|DE=Isidora Silva|A=Antonia Castro|MONTO=576901
+
+[Transacción 17] (paquete #18, nonce=186f60e5c43192089132324f)
+TRANSACCION COMPLETADA|ID=TRX-367001|DE=Fernanda Araya|A=Tomas Sepulveda|MONTO=282567
+
+[Transacción 18] (paquete #19, nonce=5c29e076a5d9c3de7a3bab28)
+TRANSACCION COMPLETADA|ID=TRX-188807|DE=Camila Torres|A=Antonia Castro|MONTO=195173
+
+[Transacción 19] (paquete #20, nonce=1a4ddf05bef0ab1df4034fd1)
+TRANSACCION COMPLETADA|ID=TRX-096936|DE=Felipe Morales|A=Antonia Castro|MONTO=359917
+
+[Transacción 20] (paquete #21, nonce=a88ad7b0857ba22ac08986d2)
+TRANSACCION COMPLETADA|ID=TRX-695623|DE=Catalina Vargas|A=Nicolas Herrera|MONTO=619299
+
+[Transacción 21] (paquete #22, nonce=f98fec685d05bc5f42006640)
+TRANSACCION COMPLETADA|ID=TRX-407749|DE=Camila Torres|A=Sebastian Munoz|MONTO=182369
+
+[Transacción 22] (paquete #23, nonce=384a3b775fded04d68925e21)
+TRANSACCION COMPLETADA|ID=TRX-069658|DE=Valentina Rojas|A=Javiera Fuentes|MONTO=556520
+
+[Transacción 23] (paquete #24, nonce=26a94dc4188b7b1e2c4abc32)
+TRANSACCION COMPLETADA|ID=TRX-232469|DE=Felipe Morales|A=Tomas Sepulveda|MONTO=23769
+
+[Transacción 24] (paquete #25, nonce=95efe5eb09c2d7abd3db43eb)
+TRANSACCION COMPLETADA|ID=TRX-940466|DE=Vicente Soto|A=Fernanda Araya|MONTO=292293
+
+[Transacción 25] (paquete #26, nonce=70bab6d5de0d59e2d6c6c5d7)
+TRANSACCION COMPLETADA|ID=TRX-755002|DE=Matias Gonzalez|A=Daniela Reyes|MONTO=946989
+
+[Transacción 26] (paquete #27, nonce=d9ac0ec1292c1d5c0b0f3bfe)
+TRANSACCION COMPLETADA|ID=TRX-962321|DE=Felipe Morales|A=Daniela Reyes|MONTO=589780
+
+[Transacción 27] (paquete #28, nonce=f0f8f4dd1c03712bff6b0eac)
+TRANSACCION COMPLETADA|ID=TRX-324981|DE=Diego Ramirez|A=Daniela Reyes|MONTO=971045
+
+[Transacción 28] (paquete #29, nonce=03f376986f5e5fad475af914)
+TRANSACCION COMPLETADA|ID=TRX-337011|DE=Antonia Castro|A=Felipe Morales|MONTO=777198
+
+[Transacción 29] (paquete #30, nonce=5ed68b9d41a6041d27e5d03f)
+TRANSACCION COMPLETADA|ID=TRX-995006|DE=Vicente Soto|A=Sebastian Munoz|MONTO=587590
+
+[Transacción 30] (paquete #31, nonce=75a700b47bcb59eb876b0943)
+TRANSACCION COMPLETADA|ID=TRX-630572|DE=Camila Torres|A=Sebastian Munoz|MONTO=332702
+
+[Transacción 31] (paquete #32, nonce=cca7fd45f517374c588be3f0)
+TRANSACCION COMPLETADA|ID=TRX-517969|DE=Catalina Vargas|A=Daniela Reyes|MONTO=484770
+
+[Transacción 32] (paquete #33, nonce=4848829f37e165c9528e0ae1)
+TRANSACCION COMPLETADA|ID=TRX-447236|DE=Matias Gonzalez|A=Constanza Vidal|MONTO=331352
+
+[Transacción 33] (paquete #34, nonce=6daa50fc04b47dbf091430b1)
+TRANSACCION COMPLETADA|ID=TRX-852645|DE=Constanza Vidal|A=Felipe Morales|MONTO=343065
+
+[Transacción 34] (paquete #35, nonce=5f087d656b1ed617d52e3124)
+TRANSACCION COMPLETADA|ID=TRX-188241|DE=Camila Torres|A=Constanza Vidal|MONTO=781107
+
+[Transacción 35] (paquete #36, nonce=2b03ce1fc62f19b9e000080a)
+TRANSACCION COMPLETADA|ID=TRX-713923|DE=Diego Ramirez|A=Catalina Vargas|MONTO=21358
+
+[Transacción 36] (paquete #37, nonce=aea1388078eaeb1177a5ca11)
+TRANSACCION COMPLETADA|ID=TRX-362125|DE=Camila Torres|A=Sebastian Munoz|MONTO=154118
+
+[Transacción 37] (paquete #38, nonce=cd596838db379cbf7d398f7b)
+TRANSACCION COMPLETADA|ID=TRX-961549|DE=Felipe Morales|A=Sebastian Munoz|MONTO=614169
+
+[Transacción 38] (paquete #39, nonce=b3a895d40a67e146f2a30352)
+TRANSACCION COMPLETADA|ID=TRX-965060|DE=Tomas Sepulveda|A=Antonia Castro|MONTO=778912
+
+[Transacción 39] (paquete #40, nonce=99712d0177833d0cccbb032e)
+TRANSACCION COMPLETADA|ID=TRX-437498|DE=Valentina Rojas|A=Matias Gonzalez|MONTO=440902
+
+[Transacción 40] (paquete #41, nonce=4a35bc02d6838969a8b51083)
+TRANSACCION COMPLETADA|ID=TRX-367112|DE=Matias Gonzalez|A=Isidora Silva|MONTO=91711
+
+[+] 40/40 transacciones autenticadas correctamente (tag GCM válido)
+(venv) hoqi@hoqi-ideapad:~/lab4-ssh/lab4-act2$ 
